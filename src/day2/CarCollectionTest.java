@@ -59,4 +59,12 @@ public class CarCollectionTest {
 
         assertEquals(CarCollection.Status.LIMITED_AVAILABILITY, carCollection.getStatus());
     }
+
+    @Test
+    public void shouldReturnAvailableSpaces() {
+        carCollection = new CarCollection(2);
+        carCollection.add(new Car());
+
+        assertEquals(1, carCollection.getAvailableSpaces());
+    }
 }

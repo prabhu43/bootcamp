@@ -66,4 +66,8 @@ public class ParkingLot {
     public int getCost() {
         return cost;
     }
+
+    public int getAvailableSpaces() {
+        return parkedCars.getAvailableSpaces();
+    }
 }
