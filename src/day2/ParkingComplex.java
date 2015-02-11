@@ -39,21 +39,6 @@ public class ParkingComplex {
             return parkingLots;
         }
 
-//        public ParkingLot getCheapestParkingLot() {
-//            ParkingLot cheapestParkingLot = null;
-//            for (ParkingLot parkingLot : parkingLots) {
-//                if (cheapestParkingLot == null) {
-//                    cheapestParkingLot = parkingLot;
-//                } else {
-//                    if (cheapestParkingLot.getCost() > parkingLot.getCost()) {
-//                        cheapestParkingLot = parkingLot;
-//                    }
-//                }
-//            }
-//            return cheapestParkingLot;
-//        }
-
-
         public ParkingLot getParkingLot() {
             for (ParkingLot parkingLot : parkingLots) {
                 if (!parkingLot.isFull()) {
@@ -64,23 +49,5 @@ public class ParkingComplex {
             return null;
         }
 
-//        public ParkingLot getParkingLotWithMaximumSpace() {
-//            ParkingLot largestParkingLot = null;
-//            for (ParkingLot parkingLot : parkingLots) {
-//                if (parkingLot.isFull())
-//                    continue;
-//
-//                if (largestParkingLot == null) {
-//                    largestParkingLot = parkingLot;
-//                } else {
-//                    if (largestParkingLot.getAvailableSpaces() < parkingLot.getAvailableSpaces()) {
-//                        largestParkingLot = parkingLot;
-//
-//                    }
-//                }
-//
-//            }
-//            return largestParkingLot;
-//        }
     }
 }
